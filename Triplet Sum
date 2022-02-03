@@ -1,0 +1,26 @@
+int tripletSum(int *input, int size, int x)
+{
+int count = 0;
+    for(int i = 0; i< size; i++){
+        for (int j = i+1 ; j< size ; j++){
+            int z = x-(input[i] + input[j]);
+            for(int k = j+1; k < size; k++){
+                    
+                if (i==j==k ){
+                    continue;
+                }
+                else{
+                    
+                   if (input[k]==z){
+                    count++;
+                }
+            }
+        }
+    }
+ 
+    
+    }
+        return count;
+    
+}
+    
